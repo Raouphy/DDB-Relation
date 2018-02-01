@@ -1,6 +1,7 @@
 <div class="container">
 <h2> <%= @post.title %> </h2>
 <p> <%= @post.body %> </p>
+<span><%= time_ago_in_words(@post.created_at) %> </span>
 
 <h3> Commentaire</h3>
 <%= render @post.comments %>
